@@ -13,9 +13,11 @@ const App = () => {
         "https://www.breakingbadapi.com/api/characters"
       );
       console.log(result.data);
+      setItems(result.data);
+      setIsLoading(false);
     };
 
-    fetchItems()
+    fetchItems();
   }, []);
 
   return (
